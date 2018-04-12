@@ -3,5 +3,12 @@ services:
   hbase:
     image: dajobe/hbase
     container_name: hbase
+    ports:
+    - 8080:8080
+    - 8085:8085
+    - 9090:9090
+    - 9095:9095
+    - 2181:2181
+    - 16010:16010
     volumes:
     - /data/hbase:/data
